@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form in HTML and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="nav">
+                    <a href="index.html">✿ Início</a>
+                    <a href="form.html">✿ Formulário</a>
+                    <a href="about.html">✿ Sobre</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="resultado">
+            <h1>Resultado do Formulário</h1>
+            <div class="animation-container">
+                <div class="animated-box"></div>
+            <p>✿ Nome: <span id="result-name"></span></p>
+            <p>✿ Email: <span id="result-email"></span></p>
+        </div>
+    </main>
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Barbara Wasch</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const email = urlParams.get('email');
+            document.getElementById('result-name').textContent = name;
+            document.getElementById('result-email').textContent = email;
+        });
+    </script>
+</body>
+</html>

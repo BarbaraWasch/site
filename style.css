@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Popping:wght@300;400;500;600;700;800;900&displat=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('pink4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .saiba-mais {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 10px;
+}
+
+.saiba-mais a {
+    color: #ff4d88;
+    text-decoration: none;
+}
+
+.saiba-mais a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #ff4d88;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    background-color:#ff6c9d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer footer {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav {
+    position: absolute; 
+    display: flex;
+    backdrop-filter: blur(7px);
+    justify-content: space-between;
+    align-items: center;
+    top: 0; 
+    width: 80%;
+    left: 10%;
+    background-color: #ff4d8844;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.nav a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive; 
+}
+
+.nav a:first-child {
+    margin-right: auto;
+    padding-left: 50px; 
+}
+
+.nav a:nth-child(2) {
+    margin: 0 auto;
+}
+
+.nav a:last-child {
+    margin-left: auto;
+    padding-right: 50px; /* Distância da margem direita */
+}
+
+
+.Sobre {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive; /* Aplicando a fonte cursiva */
+}
+
+.Sobre p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive; /* Aplicando a fonte cursiva */
+}
+
+.Github p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive; /* Aplicando a fonte cursiva */
+}
+
+.Github i {
+    position: absolute;
+    right: 100px;
+    top: 82%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+
+.Welcome {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.Welcome p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+}
+
+.Welcome .icons {
+    margin-top: 20px; /* Ajuste a distância entre o texto e os ícones conforme necessário */
+}
+
+.Welcome i {
+    font-size: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #fff; /* Ajuste a cor dos ícones conforme necessário */
+}
+
+.resultado {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    font-size: 18px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.resultado h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive; /* Aplicando a fonte cursiva */
+    margin-bottom: 20px; /* Adicionando espaço abaixo do h1 */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animated-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .8);
+    position: relative;
+    animation: slide 4s infinite;
+    margin-bottom: 18px;
+}
+
